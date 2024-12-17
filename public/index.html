@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasturio.com</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../src/styles/index.css" />
+  </head>
+  <body>
+    <!-- *****Header Component****** -->
+    <!-- This will not show at the landing page -->
+    <header id="header" class="header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img
+            src="../src/assets/landing/IMG-20241115-WA0008.jpg"
+            alt="Logo"
+            class="logo-image"
+          />
+        </a>
+        <div class="site-title">
+          <h1>Pasturio</h1>
+          <h5>Agricultural Premier Platform</h5>
+        </div>
+      </div>
+
+      <div class="navigation-container">
+        <ul class="navigation-wrapper">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+        <div id="menuIconFirstBar"></div>
+        <div id="menuIconSecondBar"></div>
+        <div id="menuIconThirdBar"></div>
+      </div>
+      <div class="nav-menu" id="dropdownMenu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="../src/components/pages/home/about.html">About</a></li>
+          <li>
+            <a href="../src/components/pages/home/contact.html">Contact Us</a>
+          </li>
+          <li><a href="../src/components/pages/home/faq.html">FAQ</a></li>
+          <li class="register-btn">
+            <a href="../src/components/pages/auth/register.html">Register</a> /
+            <a href="../src/components/pages/auth/signin.html">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <article class="firstarticle">
+      <section class="introduction">
+        <img
+          src="../src/assets/landing/IMG-20241115-WA0008.jpg"
+          alt="Pasturio Image"
+          draggable="false"
+          class="pasturioImage"
+        />
+        <div class="overlay-text">
+          <div>
+            <h1>Welcome to Pasturio!</h1>
+            <p>
+              At Pasturio, we believe in revolutionizing agriculture by
+              connecting farmers, consumers, and businesses for a sustainable
+              future...
+            </p>
+          </div>
+          <div class="learnMoreButton">
+            <a
+              href="../src/components/pages/home/about.html"
+              class="learn-more-btn"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Horizontal Scroll Section -->
+    <section id="scrollableContainer">
+      <div class="prev-button-container" id="prevButtonContainer">
+        <svg class="prevSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" style="width: 70px; height: 70px">
+          <path
+            d="M8 5v-1a1 1 0 0 0 -1 -1h-3a1 1 0 0 0 -1 1v10a1 1 0 0 0 1 1h3a1 1 0 0 0 1 -1v-1l-1 -1v2h-3v-10h3v2zM15 8v2h-6l2 2l-1 1l-4 -4l4 -4l1 1l-2 2z"
+            style="fill: rgb(43, 14, 122)"
+          />
+        </svg>
+      </div>
+      <div class="next-button-container" id="nextButtonContainer">
+        <svg class="nextSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" style="width: 70px; height: 70px">
+          <path
+            d="M10 5v-1a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1l1 -1v2h3v-10h-3v2zM3 8v2h6l-2 2l1 1l4 -4l-4 -4l-1 1l2 2z"
+            style="fill: rgb(43, 14, 122)"
+          />
+        </svg>
+      </div>
+      <div class="scroll-wrapper" id="scrollWrapper">
+        <div class="contentWrapper">
+          <img
+            src="../src/assets/landing/farmers.jpg"
+            alt=""
+            class="content-image"
+          />
+          <div class="description-text">
+            <div>
+              <h1>Welcome, Farmers!</h1>
+              <p>
+                At Pasturio, we understand that you are the backbone of the
+                agricultural value chain...
+              </p>
+            </div>
+            <div class="learnMoreButton">
+              <a
+                href="../src/components/pages/home/about.html"
+                class="learn-more-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contentWrapper">
+          <img
+            src="../src/assets/landing/IMG-20241115-WA0005.jpg"
+            alt=""
+            class="content-image"
+          />
+          <div class="description-text">
+            <div>
+              <h1>Welcome, Traders!</h1>
+              <p>
+                In the agricultural value chain, you play a critical role by
+                linking farmers with markets...
+              </p>
+            </div>
+            <div class="learnMoreButton">
+              <a
+                href="../src/components/pages/home/about.html"
+                class="learn-more-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contentWrapper">
+          <img
+            src="../src/assets/landing/IMG-20241115-WA0004.jpg"
+            alt=""
+            class="content-image"
+          />
+          <div class="description-text">
+            <div>
+              <h1>Welcome, Entrepreneurs!</h1>
+              <p>
+                Pasturio offers a platform where your innovative agricultural
+                solutions can find the right audience...
+              </p>
+            </div>
+            <div class="learnMoreButton">
+              <a
+                href="../src/components/pages/home/about.html"
+                class="learn-more-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contentWrapper">
+          <img
+            src="../src/assets/landing/IMG-20241115-WA0007.jpg"
+            alt=""
+            class="content-image"
+          />
+          <div class="description-text">
+            <div>
+              <h1>Welcome, Consumers!</h1>
+              <p>
+                Pasturio ensures that you get access to fresh, high-quality
+                agricultural products directly from the source...
+              </p>
+            </div>
+            <div class="learnMoreButton">
+              <a
+                href="../src/components/pages/home/about.html"
+                class="learn-more-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contentWrapper">
+          <img
+            src="../src/assets/landing/IMG-20241115-WA0006.jpg"
+            alt=""
+            class="content-image"
+          />
+          <div class="description-text">
+            <div>
+              <h1>Our Guarantee!</h1>
+              <p>
+                At Pasturio, we are committed to providing a reliable and
+                transparent platform for everyone...
+              </p>
+            </div>
+            <div class="learnMoreButton">
+              <a
+                href="../src/components/pages/home/about.html"
+                class="learn-more-btn"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="../src/scripts/index.js"></script>
+    <!-- <script type="module" src="../src/scripts/index.js"></script> -->
+  </body>
+</html>

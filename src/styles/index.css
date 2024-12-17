@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  color-scheme: dark;
+}
+
+/* *****Header Container Content Styles***** */
+header.header {
+  display: none;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  /* padding-left: 10px; */
+}
+
+/* Logo container : {title, logo} */
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-items: center;
+  align-content: center;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+}
+
+/* Responsive navigations routes, {NOte: You can remove them if you don't need them} */
+@media (max-width: 799px) {
+  .navigation-container {
+    display: none;
+  }
+}
+.navigation-container {
+  padding-right: 30px;
+  margin: 10px;
+}
+
+ul.navigation-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
+ul.navigation-wrapper li a {
+  text-decoration: none;
+  font-size: larger;
+  color: whitesmoke;
+}
+
+ul.navigation-wrapper li a:hover {
+  color: gold;
+}
+
+ul.navigation-wrapper li a:active {
+  color: greenyellow;
+}
+
+ul.navigation-wrapper li a:focus {
+  color: greenyellow;
+}
+
+ul.navigation-wrapper li a:focus-visible {
+  color: greenyellow;
+}
+
+ul.navigation-wrapper li a:focus-within {
+  color: greenyellow;
+}
+
+/********** Styling Menu Icon and It's contents************* */
+
+/* Menu Icon Styling */
+@media (min-width: 799px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 799px) {
+  .menu-icon {
+    padding-top: 5px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+  }
+}
+
+.menu-icon div {
+  cursor: pointer;
+  background: white;
+  width: 30px;
+  height: 4px;
+  border-radius: 10px;
+  transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+}
+
+#menuIconFirstBar.menuIconFirstBar {
+  transform: rotate(-40deg);
+}
+
+#menuIconSecondBar.menuIconSecondBar {
+  display: none;
+}
+
+#menuIconThirdBar.menuIconThirdBar {
+  position: absolute;
+  transform: rotate(40deg);
+}
+
+/* Hover effect for the menu icon */
+.menu-icon:hover {
+  color: rgba(200, 234, 7, 0.895);
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+  /* display: none; */
+  position: absolute;
+  top: 50px;
+  right: -220px; /* Align menu to the right */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(227, 227, 5, 0.895);
+  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
+}
+
+.nav-menu.active {
+  display: block;
+  right: 20px; /* Align menu to the right */
+}
+
+/* Navigation Items */
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu ul li {
+  padding: 10px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #007bff;
+  display: absolute;
+}
+
+/* ****Introduction******* */
+.firstarticle {
+  position: relative;
+  width: 100%;
+  height: calc(100svh + 5px);
+}
+
+section.introduction {
+  position: absolute;
+  width: 100% !important;
+  height: 99% !important;
+  display: flex;
+  flex-direction: column;
+  gap: -1px;
+  scrollbar-width: 0;
+  scroll-snap-type: mandatory;
+}
+
+.pasturioImage {
+  width: 100%;
+  height: 100% !important;
+}
+
+/* .overlay-text {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+} */
+
+@media (max-width: 500px) {
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .overlay-text div.learnMoreButton {
+    position: relative;
+    justify-self: flex-end;
+    justify-content: right;
+    align-self: self-end;
+    margin-right: 2px;
+  }
+
+  .overlay-text div a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    background: #2e7306;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
+.overlay-text h1 {
+  font-size: 40px;
+  color: rgb(40, 6, 66);
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.overlay-text p {
+  margin-left: 5%;
+  font-size: medium;
+  color: rgb(10, 5, 83);
+  font-weight: 700;
+}
+
+@media (max-width: 1044px) {
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  .overlay-text div.learnMoreButton {
+    position: relative;
+    justify-self: flex-end;
+    justify-content: right;
+    align-self: self-end;
+    margin-right: 2px;
+  }
+
+  .overlay-text div a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    background: #2e7306;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
+.overlay-text h1 {
+  font-size: 40px;
+  color: rgb(40, 6, 66);
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.overlay-text p {
+  margin-left: 5%;
+  font-size: medium;
+  color: rgb(10, 5, 83);
+  font-weight: 700;
+}
+
+@media (min-width: 1044px) {
+  .overlay-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .overlay-text div.learnMoreButton {
+    justify-self: flex-end;
+    justify-content: right;
+    margin-right: 3px;
+  }
+
+  .overlay-text div a {
+    padding: 10px;
+    background: #2e7306;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
+/* ********Scrollable Container************ */
+#scrollableContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.scroll-wrapper {
+  position: relative;
+  width: 100%;
+  height: calc(100svh + 5px);
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  
+}
+
+.contentWrapper {
+  width: 100%;
+  height: calc(100svh + 5px);
+  position: relative;
+}
+
+.content-image {
+  object-fit: fill;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  width: calc(100svw + 4px);
+  height: calc(100svh + 5px);
+}
+
+/* Description text */
+
+/* .description-text {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+} */
+
+@media (max-width: 500px) {
+  .description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .description-text div.learnMoreButton {
+    position: relative;
+    justify-self: flex-end;
+    justify-content: right;
+    align-self: self-end;
+    margin-right: 2px;
+  }
+
+  .description-text div a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    background: #2e7306;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
+.description-text h1 {
+  font-size: 40px;
+  color: white;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.description-text p {
+  margin-left: 5%;
+  font-size: medium;
+  color: white;
+  font-weight: 700;
+}
+
+@media (max-width: 1044px) {
+  .description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  .description-text div.learnMoreButton {
+    position: relative;
+    justify-self: flex-end;
+    justify-content: right;
+    align-self: self-end;
+    margin-right: 2px;
+  }
+
+  .description-text div a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    background: #2e7306;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
+.description-text h1 {
+  font-size: 40px;
+  color: white;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.description-text p {
+  margin-left: 5%;
+  font-size: medium;
+  color: white;
+  font-weight: 700;
+}
+
+@media (min-width: 1044px) {
+  .description-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description-text div.learnMoreButton {
+    justify-self: flex-end;
+    justify-content: right;
+    margin-right: 3px;
+  }
+
+  .description-text div a {
+    padding: 10px;
+    background: #2e7306;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+}
+
+/* previous Button Style */
+.prev-button-container {
+  position: absolute;
+  top: 45svh;
+  bottom: 45svh;
+  left: 5px;
+  color: #000;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* forward Button Style */
+.next-button-container {
+  position: absolute;
+  top: 45svh;
+  bottom: 45svh;
+  right: 5px;
+  color: #000;
+  z-index: 100;
+  cursor: pointer;
+}
+.nextSvg {
+  
+}

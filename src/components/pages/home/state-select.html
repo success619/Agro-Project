@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Access - State Selection</title>
+    <link rel="stylesheet" href="../../../styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://raw.githubusercontent.com/Wasem1209/Phillip-/f0886852738c4bc8d4d99e1d626df32943600c21/file-tqkr9QmnljrHslWnQEcAFQRC.webp" alt="Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="site-title">
+                <h1>Pasturio</h1>
+                <h5>Agricultural Premier Platform</h5>
+            </div>
+        </div>
+    </header>
+
+    <div class="sear-bar">
+        <input type="text" id="search-input" placeholder="Search..." onkeyup="performsearch()">
+        <button onclick="performsearch()">Search</button>
+    </div>
+
+    <p>Select a state to view available products</p>
+
+    <section class="state-list">
+        <div class="state-box" onclick="navigateToProductList('Abia')">
+            <a href="abia-products.html" class="state-link">
+            <h2>Abia State</h2>
+            <p>Products: Cassava, Yam, Palm Oil</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Adamawa')">
+            <a href="adamawa-products.html" class="state-link">
+            <h2>Adamawa State</h2>
+            <p>Products: Groundnut, Sorghum, Millet</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Akwa Ibom')">
+            <a href="akwa-ibom-products.html" class="state-link">
+            <h2>Akwa Ibom State</h2>
+            <p>Products: Fish, Yam, Palm Oil</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Anambra')">
+            <a href="anambra-products.html" class="state-link">
+            <h2>Anambra State</h2>
+            <p>Products: Rice, Cassava, Fish</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Bauchi')">
+            <a href="bauchi-products.html" class="state-link">
+            <h2>Bauchi State</h2>
+            <p>Products: Maize, Rice, Sorghum</p>
+        </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Bayelsa')">
+            <a href="bayelsa-products.html" class="state-link">
+            <h2>Bayelsa State</h2>
+            <p>Products: Fish, Yam, Rice</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Benue')">
+            <a href="benue-products.html" class="state-link">
+                <h2>Benue State</h2>
+                <p>Products available: Cassava, Groundnut, Yam, and Garri</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Borno')">
+            <a href="borno-products.html" class="state-link">
+            <h2>Borno State</h2>
+            <p>Products: Sorghum, Millet, Wheat</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Cross River')">
+            <a href="cross-river-products.html" class="state-link">
+            <h2>Cross River State</h2>
+            <p>Products: Cocoa, Rubber, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Delta')">
+            <a href="delta-products.html" class="state-link">
+            <h2>Delta State</h2>
+            <p>Products: Oil Palm, Fish, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Ebonyi')">
+            <a href="ebony-products.html" class="state-link">
+            <h2>Ebonyi State</h2>
+            <p>Products: Rice, Yam, Cassava</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Edo')">
+            <a href="edo-products.html" class="state-link">
+            <h2>Edo State</h2>
+            <p>Products: Cocoa, Rubber, Yam</p>
+        </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Ekiti')">
+            <a href="ekiti-products.html" class="state-link">
+            <h2>Ekiti State</h2>
+            <p>Products: Cocoa, Palm Oil, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Enugu')">
+            <a href="enugu-products.html" class="state-link">
+            <h2>Enugu State</h2>
+            <p>Products: Rice, Yam, Cassava</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('FCT')">
+            <a href="fct-products.html" class="state-link">
+            <h2>FCT</h2>
+            <p>Products: Vegetable, Poultry, Fish</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Gombe')">
+            <a href="gombe-products.html" class="state-link">
+            <h2>Gombe State</h2>
+            <p>Products: Maize, Millet, Sorghum</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Imo')">
+            <a href="imo-products.html" class="state-link">
+            <h2>Imo State</h2>
+            <p>Products: Oil Palm, Cassava, Yam</p>
+        </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Jigawa')">
+            <a href="jigawa-products.html" class="state-link">
+            <h2>Jigawa State</h2>
+            <p>Products: Millet, Groundnut, Wheat</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Kaduna')">
+            <a href="kaduna-products.html" class="state-link">
+            <h2>Kaduna State</h2>
+            <p>Products: Ginger, Maize, Sorghum</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Kano')">
+            <a href="kano-products.html" class="state-link">
+            <h2>Kano State</h2>
+            <p>Products: Groundnut, Tomato, Maize</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Katsina')">
+            <a href="katsina-products.html" class="state-link">
+            <h2>Katsina State</h2>
+            <p>Products: Cotton, Groundnut, Millet</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Kebbi')">
+            <a href="kebbi-products.html" class="state-link">
+            <h2>Kebbi State</h2>
+            <p>Products: Rice, Millet, Sorghum</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Kogi')">
+            <a href="kogi-products.html" class="state-link">
+            <h2>Kogi State</h2>
+            <p>Products: Cassava, Maize, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Kwara')">
+            <a href="kwara-products.html" class="state-link">
+            <h2>Kwara State</h2>
+            <p>Products: Rice, Yam, Cassava</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Lagos')">
+            <a href="lagos-products.html" class="state-link">
+            <h2>Lagos State</h2>
+            <p>Products: Fish, Poultry, Vegetables</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Nasarawa')">
+            <a href="nasarawa-products.html" class="state-link">
+            <h2>Nasarawa State</h2>
+            <p>Products: Yam, Maize, Sorghum</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Niger')">
+            <a href="niger-products.html" class="state-link">
+            <h2>Niger State</h2>
+            <p>Products: Rice, Maize, Groundnut</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Ogun')">
+            <a href="ogun-products.html" class="state-link">
+            <h2>Ogun State</h2>
+            <p>Products: Cassava, Cocoa, Palm Oil</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Ondo')">
+            <a href="ondo-products.html" class="state-link">
+            <h2>Ondo State</h2>
+            <p>Products: Cocoa, Rubber, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Osun')">
+            <a href="osun-products.html" class="state-link">
+            <h2>Osun State</h2>
+            <p>Products: Cocoa, Palm Oil, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Oyo')">
+            <a href="oyo-products.html" class="state-link">
+            <h2>Oyo State</h2>
+            <p>Products: Cocoa, Cashew, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Plateau')">
+            <a href="plateau-products.html" class="state-link">
+            <h2>Plateau State</h2>
+            <p>Products: Potato, Tomato, Maize</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Rivers')">
+            <a href="rivers-products.html" class="state-link">
+            <h2>Rivers State</h2>
+            <p>Products: Fish, Oil Palm, Yam</p>
+            </a>
+        </div>
+        <div class="state-box" onclick="navigateToProductList('Sokoto')">
+            <a href="sokoto-products.html" class="state-link">
+            <h2>Sokoto State</h2>
+            <p>Products: Millet</p>
+            </a>
+            </div>
+            <div class="state-box" onclick="navigateToProductList('taraba')">
+                <a href="taraba-products.html" class="state-link">
+                <h2>Taraba State</h2>
+                <p>Products: Beans, Rice, Millet, Birds, Cow and pig.</p>
+                </a>
+                </div>
+            <div class="state-box" onclick="navigateToProductList('Yobe')">
+                <a href="yobe-products.html" class="state-link">
+                <h2>Yobe State</h2>
+                <p>Products: Millet, Sorghum, Groundnut</p>
+                </a>
+            </div>
+            <div class="state-box" onclick="navigateToProductList('Zamfara')">
+                <a href="zamfara-products.html" class="state-link">
+                <h2>Zamfara State</h2>
+                <p>Products: Groundnut, Cotton, Millet</p>
+                </a>
+            </div>
+        </section>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="programs.html">Programs</a>
+            <a href="sponsorship.html">Sponsorship</a> 
+            <a href="collaboration.html">Collaboration</a>
+            <a href="dialogue.html">Dialogue</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy-polcy.html">Privacy and Policy</a>
+        </div>
+    </div>
+    <p>&copy; 2024 Pasturio. All rights reserved.</p>
+</footer>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+            

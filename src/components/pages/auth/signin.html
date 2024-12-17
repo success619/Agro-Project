@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Pasturio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        
+        <!-- Sign-in form -->
+        <form action="submit_signin.php" method="post">
+            <label for="username">Username/Email</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="signin-btn">Sign In</button>
+            
+            <p class="reset-password">Forgot password? <a href="forgot_password.html">Reset it here</a></p>
+            
+            <p class="alternative-login">Or sign in with:</p>
+            
+            <!-- Social login buttons -->
+            <div class="social-login">
+                <button type="button" class="social-btn google">
+                    <img src="path/to/google-icon.png" alt="Google">
+                </button>
+                <button type="button" class="social-btn x">
+                    <img src="path/to/x-icon.png" alt="X"> X
+                </button>
+                <button type="button" class="social-btn facebook">
+                    <img src="path/to/facebook-icon.png" alt="Facebook">
+                </button>
+                <button type="button" class="social-btn linkedin">
+                    <img src="path/to/linkedin-icon.png" alt="LinkedIn"> 
+                </button>
+            </div>
+            
+            <p class="signup-prompt">Don't have an account? <a href="register.html">Register here</a></p>
+        </form>
+    </div>
+
+    <script src="main.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
